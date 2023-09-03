@@ -33,7 +33,7 @@ public class ContaCorrente {
 }
 		
 		
-static double saldo = 0;
+static double saldo;
 	
 	  		
 		protected static void depositar() {
@@ -56,6 +56,7 @@ static double saldo = 0;
 	  				System.out.println("Você não tem saldo suficiente, seu saldo atual é de: " + saldo);
 	  			}
 	  				else {
+	  					sac = (sac + (sac * 0.005));
 	  					saldo = saldo - sac;
 	  				}
 	  			
